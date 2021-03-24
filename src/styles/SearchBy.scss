@@ -1,0 +1,112 @@
+.searchWrapper {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  place-items: center;
+  width: 100%;
+  height: calc(100vh - 80px);
+  text-align: center;
+  .alcImg {
+    width: 50%;
+  }
+
+  .alcImg2 {
+    width: 50%;
+  }
+
+  .ingImg {
+    width: 50%;
+  }
+
+  .ingImg2 {
+    width: 50%;
+    transform: rotate(-41deg);
+  }
+
+  .searchBy {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    width: 100%;
+
+    justify-content: center;
+
+    .selectWrapper {
+      position: relative;
+      width: 40%;
+      z-index: 10;
+      border: 1px solid white;
+      border-radius: 3rem;
+      margin: 2rem 0;
+
+      &::after {
+        width: 10%;
+        height: 100%;
+        display: grid;
+        place-items: center;
+        position: absolute;
+        content: "\25BC";
+        top: 0;
+        right: 2%;
+        z-index: -1;
+      }
+
+      .searchSelect {
+        width: 100%;
+        border: none;
+        outline: none;
+        appearance: none;
+        position: relative;
+        background-color: transparent;
+        color: white;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+
+        option {
+          background-color: whitesmoke;
+          color: black;
+        }
+      }
+    }
+
+    .searchByBtn {
+      padding: 0.5rem 3rem;
+      border: 1px solid rgb(238, 235, 235);
+      border-radius: 3rem;
+      outline: none;
+      font-size: 1rem;
+      background-color: orange;
+      color: black;
+
+      &:hover {
+        cursor: pointer;
+        background-color: rgb(255, 181, 44);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .searchWrapper {
+    .searchBy {
+      .selectWrapper {
+        width: 60%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .searchWrapper {
+    grid-template-columns: 1fr;
+
+    img {
+      display: none;
+    }
+    .searchBy {
+      .selectWrapper {
+        width: 60%;
+      }
+    }
+  }
+}

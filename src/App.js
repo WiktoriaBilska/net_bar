@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Main from "./components/Main";
+import ByAlcohol from "./components/ByAlcohol";
+import ByIngredient from "./components/ByIngredient";
+import Drinks from "./components/Drinks";
+import DrinkDetail from "./components/DrinkDetail";
+import RandomDrink from "./components/RandomDrink";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+      <Switch>
+        <Route path="/net_bar/" exact component={Main} />
+        <Route path="/net_bar/byAlcohol" exact component={ByAlcohol} />
+        <Route path="/net_bar/byIngredient" component={ByIngredient} />
+        <Route path="/net_bar/drinks/:ingredient" component={Drinks} />
+        <Route path="/net_bar/drinkDetail/:drinkID" component={DrinkDetail} />
+        <Route path="/net_bar/randomDrink" component={RandomDrink} />
+      </Switch>
+    </Router>
   );
 }
 
