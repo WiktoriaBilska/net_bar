@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/net_bar/static/css/main.0b976924.chunk.css",
+    "main.js": "/net_bar/static/js/main.4fa40456.chunk.js",
+    "main.js.map": "/net_bar/static/js/main.4fa40456.chunk.js.map",
+    "runtime-main.js": "/net_bar/static/js/runtime-main.9ce47ce1.js",
+    "runtime-main.js.map": "/net_bar/static/js/runtime-main.9ce47ce1.js.map",
+    "static/js/2.94a6169a.chunk.js": "/net_bar/static/js/2.94a6169a.chunk.js",
+    "static/js/2.94a6169a.chunk.js.map": "/net_bar/static/js/2.94a6169a.chunk.js.map",
+    "index.html": "/net_bar/index.html",
+    "static/css/main.0b976924.chunk.css.map": "/net_bar/static/css/main.0b976924.chunk.css.map",
+    "static/js/2.94a6169a.chunk.js.LICENSE.txt": "/net_bar/static/js/2.94a6169a.chunk.js.LICENSE.txt",
+    "static/media/blue.ca84f899.png": "/net_bar/static/media/blue.ca84f899.png",
+    "static/media/lemon.c1ce8eea.svg": "/net_bar/static/media/lemon.c1ce8eea.svg",
+    "static/media/orange.7543a203.png": "/net_bar/static/media/orange.7543a203.png",
+    "static/media/watermelon.29ee5ebc.png": "/net_bar/static/media/watermelon.29ee5ebc.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9ce47ce1.js",
+    "static/js/2.94a6169a.chunk.js",
+    "static/css/main.0b976924.chunk.css",
+    "static/js/main.4fa40456.chunk.js"
+  ]
+}
